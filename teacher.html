@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher | MSEUFCI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <nav class="nav-dashboard">
+        <div class="header">
+            <a href="teacher.html"><img src="image/logo.png.png" class="logo"></a>
+            <p class="h3 text-center">Manuel S. Enverga University Foundation Candelaria, Inc.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="image/logo6-modified.png" class="nav-img">
+            </button>
+        </div>
+  
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  
+          <div class="offcanvas-header">
+  
+            <img src="image/Picsart_24-11-03_13-59-30-957.png" class="studentLogo">
+            <h1 class="h1" id="username">Teacher's Name<br><span class="status">Teacher</span></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  
+          </div>
+  
+          <div class="offcanvas-body">
+            <ul>
+              <li class="side"><a href="#">INFORMATION</a></li>
+              <li class="side"><a href="#">SETTINGS</a></li>
+              <li class="side"><a href="#">PRIVACY</a></li>
+              <li class="side"><a href="#">HELP</a></li>
+              <li class="side"><a href="#">ABOUT</a></li>
+              <li class="side"><button id="logoutButton">LOGOUT</button></li>
+            </ul>
+          </div>
+          
+        </div>
+  
+    </nav>
+
+    <!-- content for teacher info and subject -->
+
+    <div class="container-sm mt-5 teacher-info">
+
+        <div class="subject-header">
+            <h1 class="text-uppercase">Subject</h1>
+        </div>
+
+        <div class="container-sm mt-4">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-4 sidebar">
+                    <div class="profile mt-4">
+                        <p>Name:</p>
+                        <h5 id="teacherName">Lname, Fname</h5>
+                        <p>Teacher No.</p>
+                        <h5 id="teacherNumber">Teacher01</h5>
+                        <p>Subject: </p>
+                        <h5 id="teacherSub">AI</h5>
+                        <p>Department: </p>
+                        <h5 id="teacherDepartment">CCS</h5>
+                        
+                    </div>
+                </div>
+                <!-- Main Content -->
+                <div class="col-md-8 main-content mt-2">
+                    <div class="subject">
+                        <h5><a href="sectioncode.html" id="teacherSubject">SOFTWARE ENG.</a></h5>
+                        <i class="bi bi-file-earmark"></i>
+                        <ion-icon name="newspaper-outline" class="icon_paper"></ion-icon>
+                    </div>
+                    <div class="subject">
+                        <h5><a href="#">?????</a></h5>
+                        <i class="bi bi-file-earmark"></i>
+                        <ion-icon name="newspaper-outline" class="icon_paper"></ion-icon>
+                    </div>
+                    <div class="subject">
+                        <h5><a href="#">?????</a></h5>
+                        <i class="bi bi-file-earmark"></i>
+                        <ion-icon name="newspaper-outline" class="icon_paper"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+<script src="teacher.js"></script>
+    
+    
+</body>
+</html>

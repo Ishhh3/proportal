@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+
+    <nav class="nav-dashboard">
+        <div class="header">
+            <a href="teacher.html"><img src="image/logo.png.png" class="logo"></a>
+            <p class="h3 text-center">Manuel S. Enverga University Foundation Candelaria, Inc.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="image/logo6-modified.png" class="nav-img">
+            </button>
+        </div>
+  
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  
+          <div class="offcanvas-header">
+  
+            <img src="image/Picsart_24-11-03_13-59-30-957.png" class="studentLogo">
+            <h1 class="h1" id="username">Teacher's Name<br><span class="status">Teacher</span></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  
+          </div>
+  
+          <div class="offcanvas-body">
+            <ul>
+              <li class="side"><a href="#">INFORMATION</a></li>
+              <li class="side"><a href="#">SETTINGS</a></li>
+              <li class="side"><a href="#">PRIVACY</a></li>
+              <li class="side"><a href="#">HELP</a></li>
+              <li class="side"><a href="#">ABOUT</a></li>
+              <li class="side"><button id="logoutButton">LOGOUT</button></li>
+            </ul>
+          </div>
+          
+        </div>
+  
+    </nav>
+
+
+
+    <div class="container-sm">
+
+
+        <!-- Header Section -->
+        <div class="nav-header">
+            <a href="sectioncode.html"><h1 class="h2"><ion-icon name="arrow-back-outline"></ion-icon>Back</h1></a>
+        </div>
+
+    <!-- Section Title -->
+    <div class="section-title">
+        STUDENTS
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+        <table class="table table-bordered">
+            <thead class="table-head">
+                <tr>
+                    <th>Student No.</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <!-- <th><img src="image.png" alt=""></th> -->
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <td class="student-number1">A22-0001</td>
+                    <td class="studentName1">Aoi, Azuri Y.</td>
+                    <td class="studentCourse1">BSCS</td>
+                    <td class="studentYear1">3</td>
+                </tr>
+                <tr>
+                    <td class="student-number2">A22-0002</td>
+                    <td class="studentName2">Batumbakal, Annie F.</td>
+                    <td class="studentCourse2">BSCS</td>
+                    <td class="studentYear2">3</td>
+                </tr>
+                <tr>
+                    <td class="student-number3">A22-0003</td>
+                    <td class="studentName3">Cadbury, Hazel N.</td>
+                    <td class="studentCourse3">BSCS</td>
+                    <td class="studentYear3">3</td>
+                </tr>
+                <tr>
+                    <td class="student-number4">A22-0004</td>
+                    <td class="studentName4">Dela Cruz, Juan G.</td>
+                    <td class="studentCourse4">BSCS</td>
+                    <td class="studentYear4">3</td>
+                </tr>
+                <tr>
+                    <td class="student-number5">A22-0005</td>
+                    <td class="studentName5">Erza, Scarlet R.</td>
+                    <td class="studentCourse5">BSCS</td>
+                    <td class="studentYear5">3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel"><span id="subc"></span><span class="student-no">asdsad</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                    <div class="container-sm">
+
+                        <div class="table-container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="tr-head">
+                                        <th class="col-md-8 f-row">SUBJECT</th>
+                                        <th class="col-md-2 text-center">GRADE</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="f-row">
+                                            <p>PRELIMS</p>
+                                        </td>
+                                        <td class="text-center prelim">
+                                            <input type="text" name="prelims" id="prelimss" class="grade">
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="f-row">
+                                            <p>MIDTERMS</p>
+                                        </td>
+                                        <td class="text-center midterm">
+                                            <input type="text" name="midterms" id="midterms" class="grade">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-row">
+                                            <p>SEMI FINALS</p>
+                                        </td>
+                                        <td class="text-center semifinal">
+                                            <input type="text" name="semifinals" id="semifinals" class="grade">
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="f-row">
+                                            <p>FINALS</p>
+                                        </td>
+                                        <td class="text-center final">
+                                            <input type="text" name="finals" id="finals" class="grade">
+                                        </td>
+                                        </td> 
+                                    </tr>
+
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary subb">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="upload.html"><h1 class="h2 final-btn">GRADE<ion-icon name="arrow-forward-outline"></ion-icon></h1></a>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="uploadgrade.js"></script>
+
+
+</body>
+</html>
